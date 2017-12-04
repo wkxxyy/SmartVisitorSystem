@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+
+    <dbname value="smartvisitorsystem.android" />
+    <version value="1" />
+    <list>
+        <mapping class="com.smartvisitorsystem.android.assets.tb_authorization" />
+        <mapping class="com.smartvisitorsystem.android.assets.tb_blacklist" />
+        <mapping class="com.smartvisitorsystem.android.assets.tb_priviledge" />
+        <mapping class="com.smartvisitorsystem.android.assets.tb_record" />
+        <mapping class="com.smartvisitorsystem.android.assets.tb_relation" />
+        <mapping class="com.smartvisitorsystem.android.assets.tb_staff" />
+        <mapping class="com.smartvisitorsystem.android.assets.tb_user" />
+        <mapping class="com.smartvisitorsystem.android.assets.tb_visitor" />
+        <mapping class="com.smartvisitorsystem.android.assets.tb_whitelist" />
+    </list>
+
+</litepal>

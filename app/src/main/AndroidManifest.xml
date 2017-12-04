@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.smartvisitorsystem.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".LoginActivity"
+            android:label="管理员登录"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VisitorRegistration.VisitorRegistrationActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VisitorRegistration.IdcardResActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VisitorRegistration.BcardResActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VisitorRegistration.ManualResActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VisitorRegistration.QrcodeResActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VisitorRegistration.SignOut.SignOutActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".systemmanage_setting.SystemManageSettingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".systemmanage_setting.DeleteVisitorMessageActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".systemmanage_setting.QueryVisitorMessageActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".systemmanage_setting.ExportVisitorMessageActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".systemmanage_setting.UpdateVisitorMessageActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".manage_setting.ManageSettingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".system_setting.SystemSettingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".staff_setting.StaffSettingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".staff_setting.StaffGreenChannelActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".staff_setting.StaffSecretaryActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".staff_setting.StaffHolidayActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".staff_setting.StaffBlackListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".staff_setting.StaffWhiteListActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".systemmanage_setting.CreateManageActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".systemmanage_setting.LoginSystemManageSettingActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".manage_setting.LoginManageSettingActivity"
+            android:screenOrientation="landscape" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.smartvisitorsystem.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".systemmanage_setting.CreateStaffActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".VisitorRegistration.SignOut.ManualSignOutActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".VisitorRegistration.SignOut.IdCardSignOutActivity"></activity>
+    </application>
+
+</manifest>

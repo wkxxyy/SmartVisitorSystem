@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/nav_login"
+            android:title="登录"/>
+
+        <item
+            android:id="@+id/nav_manage_setting"
+            android:icon="@drawable/nav_mange_setting"
+            android:title="管理员设置"/>
+
+        <item
+            android:id="@+id/nav_systemmanage_setting"
+            android:icon="@drawable/nav_systemmange_setting"
+            android:title="系统管理员设置"/>
+
+        <item
+            android:id="@+id/nav_system_setting"
+            android:icon="@drawable/nav_system_setting"
+            android:title="系统设置"/>
+
+        <item
+            android:id="@+id/nav_staff_setting"
+            android:icon="@drawable/nav_system_setting"
+            android:title="被访人设置"/>
+
+    </group>
+
+</menu>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="欢迎来访，请自助选择登记方式"
+        android:textSize="40dp"
+
+        />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/idcard_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="身份证自助登录" />
+
+            <Button
+                android:id="@+id/bcard_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="名片自助登录"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/manual_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="手动自助登录"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/qrcode_res"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="二维码预约登录"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/sign_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="手工签退"
+                android:layout_marginTop="20dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>
