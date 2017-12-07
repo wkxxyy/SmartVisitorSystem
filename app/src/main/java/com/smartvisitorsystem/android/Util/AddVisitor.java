@@ -40,7 +40,7 @@ public class AddVisitor {
                 tb_visitor.setNo(visitorNoNum);
                 tb_visitor.setTel(visitorTel);
                 tb_visitor.save();
-                isSucceed=true&&AddRecord.addRecord(1,tb_staffList.get(0).getStaff_id(),visitorMessage);//添加访客表
+                isSucceed=true&&AddRecord.addRecord(1,tb_staffList.get(0).getStaff_id(),visitorMessage);//添加访客记录表
 
             }else {
                 tb_visitor tb_visitor=new tb_visitor();
@@ -50,7 +50,7 @@ public class AddVisitor {
                 tb_visitor.setNo(visitorNoNum);
                 tb_visitor.setTel(visitorTel);
                 tb_visitor.save();
-                isSucceed=true&&AddRecord.addRecord(visitorId,tb_staffList.get(0).getStaff_id(),visitorMessage);//添加访客表
+                isSucceed=true&&AddRecord.addRecord(visitorId,tb_staffList.get(0).getStaff_id(),visitorMessage);//添加访客记录表表
             }
 
         }

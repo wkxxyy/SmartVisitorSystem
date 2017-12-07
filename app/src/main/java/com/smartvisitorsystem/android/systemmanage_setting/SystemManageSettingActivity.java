@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 
 import com.smartvisitorsystem.android.R;
+import com.smartvisitorsystem.android.systemmanage_setting.QueryVisitorMessage.QueryVisitorMessageActivity;
+import com.smartvisitorsystem.android.systemmanage_setting.UpdateVisitorMessage.UpdateVisitorMessageActivity;
 
 public class SystemManageSettingActivity extends AppCompatActivity implements View.OnClickListener{
 

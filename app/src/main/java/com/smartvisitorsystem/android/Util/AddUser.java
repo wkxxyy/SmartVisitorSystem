@@ -13,7 +13,7 @@ import org.litepal.crud.DataSupport;
 
 public class AddUser {
 
-    public static boolean addUser(String userName,String userIdNum,String usetTel,String userPosition,int usetPriviledgeName){
+    public static boolean addUser(String userName,String userIdNum,String usetTel,String userPosition,String userPassWord,int usetPriviledgeName){
 
         boolean isSucceed=false;
 
@@ -27,6 +27,7 @@ public class AddUser {
                 tb_user.setNo(userIdNum);
                 tb_user.setTel(usetTel);
                 tb_user.setPosition(userPosition);
+                tb_user.setPassword(userPassWord);
                 tb_user.setAuthorization(usetPriviledgeName);
                 tb_user.save();
                 isSucceed=true;
@@ -37,6 +38,7 @@ public class AddUser {
                 tb_user.setNo(userIdNum);
                 tb_user.setTel(usetTel);
                 tb_user.setPosition(userPosition);
+                tb_user.setPassword(userPassWord);
                 tb_user.setAuthorization(usetPriviledgeName);
                 tb_user.save();
                 isSucceed=true;

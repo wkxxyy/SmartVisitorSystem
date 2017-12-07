@@ -55,13 +55,13 @@
             android:name=".systemmanage_setting.DeleteVisitorMessageActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".systemmanage_setting.QueryVisitorMessageActivity"
+            android:name=".systemmanage_setting.QueryVisitorMessage.QueryVisitorMessageActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".systemmanage_setting.ExportVisitorMessageActivity"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".systemmanage_setting.UpdateVisitorMessageActivity"
+            android:name=".systemmanage_setting.UpdateVisitorMessage.UpdateVisitorMessageActivity"
             android:screenOrientation="landscape" />
         <activity
             android:name=".manage_setting.ManageSettingActivity"
@@ -112,8 +112,10 @@
             android:screenOrientation="landscape" />
         <activity
             android:name=".VisitorRegistration.SignOut.ManualSignOutActivity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".VisitorRegistration.SignOut.IdCardSignOutActivity"></activity>
+            android:screenOrientation="landscape" />
+        <activity android:name=".VisitorRegistration.SignOut.IdCardSignOutActivity" />
+        <activity android:name=".systemmanage_setting.QueryVisitorMessage.QueryVisitorMessageViewActivity" />
+        <activity android:name=".systemmanage_setting.UpdateVisitorMessage.UpdateVisitorMessagViewActivity"></activity>
     </application>
 
 </manifest>

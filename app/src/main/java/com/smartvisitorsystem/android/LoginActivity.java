@@ -72,10 +72,10 @@ public class LoginActivity extends AppCompatActivity {
             root.setAuthorization(0);//系统管理员
             root.save();
 
-            tb_authorization tb_authorization=new tb_authorization();
+            /*tb_authorization tb_authorization=new tb_authorization();
             tb_authorization.setPriviledge_id(0);
             tb_authorization.setUser_id(1);
-            tb_authorization.save();
+            tb_authorization.save();*/
 
             Log.d(TAG, "添加系统默认用户");
             editor.putBoolean("isFirstRun", false);

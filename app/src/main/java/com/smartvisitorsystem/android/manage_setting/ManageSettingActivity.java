@@ -8,11 +8,9 @@ import android.widget.Button;
 
 import com.smartvisitorsystem.android.R;
 import com.smartvisitorsystem.android.systemmanage_setting.CreateStaffActivity;
-import com.smartvisitorsystem.android.systemmanage_setting.DeleteVisitorMessageActivity;
 import com.smartvisitorsystem.android.systemmanage_setting.ExportVisitorMessageActivity;
-import com.smartvisitorsystem.android.systemmanage_setting.QueryVisitorMessageActivity;
-import com.smartvisitorsystem.android.systemmanage_setting.SystemManageSettingActivity;
-import com.smartvisitorsystem.android.systemmanage_setting.UpdateVisitorMessageActivity;
+import com.smartvisitorsystem.android.systemmanage_setting.QueryVisitorMessage.QueryVisitorMessageActivity;
+import com.smartvisitorsystem.android.systemmanage_setting.UpdateVisitorMessage.UpdateVisitorMessageActivity;
 
 public class ManageSettingActivity extends AppCompatActivity implements View.OnClickListener{
     Button queryVisitorMessage;
